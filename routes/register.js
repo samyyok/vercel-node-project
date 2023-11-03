@@ -45,7 +45,7 @@ router.get('/:profile/:username',(req, res)=>{
     return
   }
 
-  currentprofile.timestamp = req.timestamp
+  
   res.render('profile',currentprofile)
 } )
 
@@ -73,7 +73,7 @@ router.get('/profiles',(req,res)=>{
  
   const data = {
     profileshere:list,
-    timestamp:req.timestamp
+    
     
   }
 
