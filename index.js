@@ -1,10 +1,18 @@
 const express = require('express')
 const app = express()
-const PORT = 4000
-
 
 var path = require('path');
 
+
+const morgan = require('morgan');
+
+// Set up the logger middleware
+app.use(morgan('dev')); // 'dev' format provides colorful output
+
+// Define your routes and other middleware here
+
+
+// Start the server
 
 
 
