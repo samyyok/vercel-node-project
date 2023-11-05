@@ -7,7 +7,7 @@ const PORT = 4000;
 const path = require('path');
 const registerRouter = require('./routes/register');
 const bodyParser = require('body-parser');
-const app = express();
+
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
