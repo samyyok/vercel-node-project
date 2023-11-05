@@ -6,9 +6,6 @@ const PORT = 4000;
 
 var path = require('path');
 
-
-const morgan = require('morgan');
-
 // Set up the logger middleware
 app.use(morgan('dev')); // 'dev' format provides colorful output
 
