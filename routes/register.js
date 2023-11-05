@@ -30,7 +30,7 @@ const profiles = {
 
 
 
-router.get('/:profile/:username',(req, res)=>{
+router.get('/profile/:username',(req, res)=>{
   const profile = req.params.profile
   const username = req.params.username
   const currentprofile = profiles[username]
@@ -49,7 +49,7 @@ router.get('/:profile/:username',(req, res)=>{
   res.render('profile',currentprofile)
 } )
 
-router.post('/register/addprofile',(req,res)=>{
+router.post('/addprofile',(req,res)=>{
   const body = req.body
   body.languages = req.body.languages.split(', ')
 
