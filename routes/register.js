@@ -63,7 +63,7 @@ router.post('/register/addprofile',(req,res)=>{
 
 })
 
-router.get('/register/profiles',(req,res)=>{
+router.get('/profiles',(req,res)=>{
   const keys = Object.keys(profiles);
   const list = []
   keys.forEach(key => {
