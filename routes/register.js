@@ -30,7 +30,7 @@ const profiles = {
 
 
 
-router.get('/profile/:username',(req, res)=>{
+router.get('/:profile/:username',(req, res)=>{
   const profile = req.params.profile
   const username = req.params.username
   const currentprofile = profiles[username]
