@@ -4,7 +4,8 @@ const morgan = require('morgan');
 const PORT = 4000;
 
 
-var path = require('path');
+const path = require('path');
+const registerRouter = require('./routes/register');
 
 // Set up the logger middleware
 app.use(morgan('dev')); // 'dev' format provides colorful output
@@ -13,12 +14,6 @@ app.use(morgan('dev')); // 'dev' format provides colorful output
 
 
 // Start the server
-
-
-
-
-
-var registerRouter = require('./routes/register');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
