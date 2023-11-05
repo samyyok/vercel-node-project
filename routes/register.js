@@ -49,7 +49,7 @@ router.get('/:profile/:username',(req, res)=>{
   res.render('profile',currentprofile)
 } )
 
-router.post('/addprofile',(req,res)=>{
+router.post('/register/addprofile',(req,res)=>{
   const body = req.body
   body.languages = req.body.languages.split(', ')
 
@@ -63,7 +63,7 @@ router.post('/addprofile',(req,res)=>{
 
 })
 
-router.get('/profiles',(req,res)=>{
+router.get('/register/profiles',(req,res)=>{
   const keys = Object.keys(profiles);
   const list = []
   keys.forEach(key => {
